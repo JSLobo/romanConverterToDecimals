@@ -1,5 +1,5 @@
 var assert = require('assert');
-var converterAPI = require('./functionTest/converter');
+var converterAPI = require('../functionTest/converter');
 var numero = 0;
 var app = require('../index.js');
 
