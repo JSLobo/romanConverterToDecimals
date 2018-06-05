@@ -1,5 +1,5 @@
 var express = require('express');
-var cors = require('cors')
+//var cors = require('cors');
 var bodyParser = require('body-parser');
 var app = express();
 var server = require('http').Server(app);
@@ -11,7 +11,7 @@ const port = process.env.PORT || 8000;
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());
+//app.use(cors());
 
 
 // ingresar palabra a la bd
