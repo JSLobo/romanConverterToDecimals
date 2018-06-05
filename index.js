@@ -18,7 +18,7 @@ app.use(cors());
 app.get('/api/converterAPI/:number', function (req, res) {
     var number = req.params.number;
     
-    res.send(JSON.stringify(converterAPI.toRoman(number)));
+    res.send(JSON.stringify(converterAPI.romanToDecimals(number)));
 });
 
 server.listen(port, function () {
